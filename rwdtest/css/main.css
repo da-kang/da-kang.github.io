@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-style: normal;
+    list-style: none;
+}
+
+html,body{height: 100%;}
+
+body{
+    background-color: #e6f4f8;
+}
+a{text-decoration: none;}
+
+/*layout-header*/
+.header{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+.header h2{
+    display: inline-block;
+    max-width: 94px;
+}
+.header h2 a{
+    display: inline-block;
+}
+.header h2 img{
+    max-width: 94px;
+}
+/*nav*/
+.nav{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+.nav a{
+    display: inline-block;
+    padding: 0 6px;
+    color: #2f323a;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*layout-main*/
+.main{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+.main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main section{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-bottom: 1%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+}
+.main section > div{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.main section h2{
+    width: 100%;
+    color: #fff;
+}
+.main section em{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 22px;
+    color: inherit;
+    font-size: 35px;
+}
+.main section strong{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 22px;
+    color: inherit;
+    font-size: 18px;
+}
+.main section .more{
+    display:inline-block;
+	width:120px;
+	height:40px;
+	border:1px solid rgba(255,255,255,.5);
+	color:#fff;
+	font-size:14px;
+	line-height:38px;
+	border-radius:40px;
+}
+
+/*portfolio*/
+.main .por{
+    width:100%;
+	height:492px;
+	background-image:url(../images/img1.jpg);
+}
+.main .por > div{
+    top: 0;
+    height: 100%;
+    transform: translateY(0);
+}
+.main .por h2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.main .por em{
+    font-size: 15px;
+}
+.main .por strong{
+    font-size: 40px;
+}
+.main .por .more{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*html5*/
+.main .html5{
+    clear: both;
+    width: 49.5%;
+    height: 300px;
+    background-color: #b9a88e;
+}
+/*css3*/
+.main .css3{
+    float: right;
+    width: 49.5%;
+    height: 300px;
+    background-color: #2d2d35;
+    
+}
+/*less,js,svn,git*/
+.main .less,
+.main .js,
+.main .svn,
+.main .git{
+    width: 24.22%;
+    height: 220px;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+.main .less h2,
+.main .js h2,
+.main .svn h2,
+.main .git h2{
+    overflow: hidden;
+    top: -999em;
+    width: 1px;
+    height: 1px;
+}
+/*less*/
+.main .less{
+    clear: both;
+    margin-left: 0;
+    background-image: url(../images/less.jpg)
+}
+/*js*/
+.main .js{
+    background-image: url(../images/js.jpg)
+}
+/*svn*/
+.main .svn{
+    background-image: url(../images/svn.jpg)
+}
+/*git*/
+.main .git{
+    background-image: url(../images/git.jpg)
+}
+.footer{
+    background-color: #dbecf1;
+}
+.foot{
+    position: relative;
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.foot .sns{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+.foot .sns a{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    line-height: 15px;
+    text-align: center;
+}
+.foot .sns img{
+    max-width: 15px;
+}
+.foot .copyright{
+    margin-top: 5.5%;
+    color: #646b72;
+    font-size: 13px;
+}
+.foot .designby{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+.foot .designby b{
+    color: #2f323a;
+   font-weight: bold;
+}
+
+
+
+
+@media(max-width: 900px){
+    body{
+        padding: 0 15px;
+    }
+        /*layout-header*/
+    .header{
+        width: 100%;
+        text-align: center;
+        padding: 10px 25px;
+    }
+    .header h2{
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    /*nav*/
+    .nav{
+        position: static;
+    }
+    .nav a{
+        float: none;
+    }
+    /*layout-main*/
+    .main{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .main section em{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .main section strong{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /*portfolio*/
+    .main .por{
+        height:400px;
+    }
+    .main .por h2{
+    top: 45%;
+    }
+    /*html5*/
+    .main .html5{
+        min-height: 400px;
+    }
+    /*css3*/
+    .main .css3{
+        min-height: 400px;
+
+    }
+    /*less,js,svn,git*/
+    .main .less,
+    .main .js,
+    .main .svn,
+    .main .git{
+        width: 49.5%;
+        height: 400px;
+        margin-bottom: 1%;
+        margin-left: 0;
+    }
+    
+    /*js*/
+    .main .js{
+        float: right;
+    }
+    /*svn*/
+    .main .svn{
+         clear: both;
+        margin-bottom: 0;
+    }
+    /*git*/
+    .main .git{
+        float: right;
+        margin-bottom: 0;
+    }
+    .footer{
+        margin: 0 -10px;
+    }
+    .foot{
+        width: 100%;
+        height: 130px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .foot .sns{
+        position: static;
+        margin-bottom: 10px;
+    }
+    .foot .copyright{
+        margin-top: 3%;
+    }
+    .foot .designby{
+        position: static;
+    }
+
+}
